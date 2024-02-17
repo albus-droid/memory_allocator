@@ -6,3 +6,8 @@ void *malloc(size_t size)
 		return NULL;
 	return block;
 }
+
+struct header_t {
+	size_t size;
+	unsigned is_free;
+};
